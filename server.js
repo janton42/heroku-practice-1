@@ -9,7 +9,7 @@ const port = process.env.PORT || 8080;
 app.set('view engine', 'ejs');
 
 //tell express to look in the public directory for assets
-app.use(express.static(_dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
 //set home page route
 app.get('/', function(req, res) {
