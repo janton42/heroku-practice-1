@@ -1,22 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 	<title>Alpha Friends</title>
 
 	<!--Bootstrap -->
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+	<script src="https://use.fontawesome.com/382d19b8cb.js"></script>
+
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="parallax">
 	<div class="container">
 		<div class="jumbotron">
 			<h1>This is Alpha Friends!</h1>
-			<p>This is the beginning of some delicious stuff</p>
+			<p class="center">Where shit gets wierd.</p>
+			<button type="button" class="btn btn-primary btn-lg btn-block" onclick='eventList.login()'>Log in</button>
+		</div>
+
+
+		<div class="container-fluid" id="schedule">
+			<h1>Pick Some Times</h1>
+			<p>Use Doodle select some times for dinner</p>
+			<button type="button" class="btn btn-primary btn-lg btn-block" onclick='eventList.schedule()'>Schedule</button>
+		</div>
+
+		<div class="container-fluid" id="invite">
+			<h1>Pick Some Friends</h1>
+			<p>Choose who you'd like to invite</p>
+			<button type="button" class="btn btn-primary btn-lg btn-block" onclick='eventList.invite()'>Invite</button>
+			
+		</div>
+		
+
+		<div class="container-fluid" id="restaurants">
+			<h1>Pick Some Restaurants</h1>
+			<p>Choose a few restaurants you'd like to go to</p>
+			<button type="button" class="btn btn-primary btn-lg btn-block" onclick='eventList.restaurants()'>Coose</button>	
 		</div>
 	</div>
+		
+	<footer>
+		<a href="https://github.com/janton42"><i class="fa fa-github" aria-hidden="true"></i></a>
+		<a href="https://twitter.com/antonbirzha"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		<a href="https://www.facebook.com/jeff.stock1"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+		<a href="http://www.linkedin.com/in/stockj"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+	</footer>
+<script type="text/javascript" src="Scripts/script.js"></script>
 
 </body>
+
 </html>
