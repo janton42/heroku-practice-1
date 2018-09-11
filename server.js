@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 
 const app = express();
 
@@ -17,7 +18,7 @@ mongoose.connect = ('mongodb://localhost/alphaFriends');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-routes(app);
+// routes(app);
 
 //tell express to look in the public directory for assets
 app.use(express.static(__dirname + '/public'));
