@@ -3,13 +3,20 @@
 	"description": "Connect and reserve",
 	"main": "server.js",
 	"scripts": {
-		"start": "node server.js"
+		"start": "node start.js"
 	},
 	"dependencies": {
 		"ejs": "^2.6.1",
 		"express": "^4.16.3",
 		"mongoose": "^5.2.5",
-		"body-parser": "^1.17.2"
+		"body-parser": "^1.17.2",
+		"nodemon": "^1.12.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-stage-0": "^6.24.1",
+		"babel-register": "^6.26.0"
 	},
 	"repository": {
 		"type": "git",
